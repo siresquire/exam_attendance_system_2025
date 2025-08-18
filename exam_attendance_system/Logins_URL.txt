@@ -1,0 +1,6 @@
+PHPADMIN:
+http://localhost:8080/phpmyadmin/
+
+
+LOGIN:
+http://localhost:8080/exam_attendance_system/login.php

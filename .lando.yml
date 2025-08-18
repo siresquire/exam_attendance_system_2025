@@ -1,0 +1,39 @@
+name: exam-attendance-system
+recipe: lamp
+config:
+  php: '8.1'
+  webroot: exam_attendance_system
+  database: mysql
+  xdebug: true
+
+services:
+  appserver:
+    type: php:8.1
+    via: apache
+    webroot: exam_attendance_system
+    build_as_root:
+      - apt-get update -y
+      - apt-get install -y zip unzip
+  
+  database:
+    type: mysql:5.7
+    portforward: 3307
+  
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+
+proxy:
+  pma:
+    - pma.exam-attendance.lndo.site
+
+tooling:
+  composer:
+    service: appserver
+  mysql:
+    service: database
+  db-import:
+    service: database
+    description: Import the database
+    cmd: mysql -u lamp -plamp lamp < /app/exam_attendance_system.sql

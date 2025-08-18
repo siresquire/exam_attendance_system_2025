@@ -1,0 +1,32 @@
+# Lando files
+.lando/
+*.lando.yml.bak
+
+# Database files
+*.sql.bak
+*_backup.sql
+
+# PHP files
+exam_attendance_system/db.php
+
+# Uploads
+exam_attendance_system/uploads/*
+!exam_attendance_system/uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Composer
+vendor/
+composer.lock
