@@ -4,8 +4,9 @@ A web-based exam attendance management system built with PHP and MySQL.
 
 ## Prerequisites
 
-- [Lando](https://lando.dev/) - Download and install from https://lando.dev/
+- [Lando](https://docs.lando.dev/install/) - Download and install from https://docs.lando.dev/install/windows.html
 - Git
+- [Docker](https://docs.docker.com/desktop/setup/install/windows-install/) - Download and install from https://docs.docker.com/desktop/setup/install/windows-install/
 
 ## Local Setup
 
