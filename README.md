@@ -13,7 +13,7 @@ A web-based exam attendance management system built with PHP and MySQL.
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd Project_updated
+   cd exam_attendance_system_2025
    ```
 
 2. **Start the development environment**
@@ -26,7 +26,7 @@ A web-based exam attendance management system built with PHP and MySQL.
    lando db-import exam_attendance_system.sql
    ```
 
-4. **Create an admin user if you don't have it already**
+4. **Create an admin user if you don't have one already**
    ```bash
    lando mysql -e "USE lamp; INSERT INTO users (name, email, password_hash, role) VALUES ('Admin', 'admin@test.com', '\$2y\$10\$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');"
    ```
@@ -36,7 +36,7 @@ A web-based exam attendance management system built with PHP and MySQL.
 - **Main Application**: https://exam-attendance-system.lndo.site/
 - **phpMyAdmin**: https://pma.exam-attendance.lndo.site/
 
-## Default Login Credentials
+## Login Credentials for the Admin user you created
 
 - **Email**: admin@test.com
 - **Password**: password
