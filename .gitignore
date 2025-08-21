@@ -1,5 +1,4 @@
 # Lando files
-.lando/
 *.lando.yml.bak
 
 # Database files
