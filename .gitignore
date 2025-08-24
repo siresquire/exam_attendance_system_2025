@@ -6,7 +6,6 @@
 *_backup.sql
 
 # PHP files
-exam_attendance_system/db.php
 
 # Uploads
 exam_attendance_system/uploads/*
