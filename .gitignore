@@ -5,12 +5,6 @@
 *.sql.bak
 *_backup.sql
 
-# PHP files
-
-# Uploads
-exam_attendance_system/uploads/*
-!exam_attendance_system/uploads/.gitkeep
-
 # Logs
 *.log
 logs/
